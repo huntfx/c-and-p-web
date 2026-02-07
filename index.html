@@ -40,18 +40,28 @@
             font-weight: 400;
         }
 
-        h3 {
-            font-family: 'Lato', sans-serif;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-top: 30px;
-            color: #6e614b;
+        .highlight {
+            font-weight: 700;
+            color: #8a7a5f;
         }
 
-        p {
-            margin-bottom: 15px;
+        .rsvp-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #8a7a5f;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
             font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+            letter-spacing: 1px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .rsvp-button:hover {
+            background-color: #6e614b;
         }
 
         .section {
@@ -62,11 +72,6 @@
 
         .section:last-child {
             border-bottom: none;
-        }
-
-        .highlight {
-            font-weight: 700;
-            color: #8a7a5f;
         }
 
         .menu-grid {
@@ -93,6 +98,8 @@
             text-align: center;
             color: #8a7a5f;
             margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
         }
 
         ul {
@@ -101,7 +108,8 @@
         }
 
         li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            padding-left: 10px;
         }
         
         .address-link {
@@ -113,23 +121,6 @@
         
         .address-link:hover {
             color: #8a7a5f;
-        }
-
-        .rsvp-button {
-            display: inline-block;
-            padding: 18px 50px;
-            background-color: #8a7a5f;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 1.2rem;
-            transition: background-color 0.3s ease;
-            letter-spacing: 1px;
-            margin-top: 20px;
-        }
-
-        .rsvp-button:hover {
-            background-color: #6e614b;
         }
 
         .small-print {
@@ -148,10 +139,16 @@
 
     <div class="container">
         
-        <header style="margin-bottom: 60px;">
+        <header style="margin-bottom: 40px;">
             <h1>Cherrelle & Peter</h1>
-            <p style="font-size: 1.3rem; letter-spacing: 2px; text-transform: uppercase;">Are Getting Married</p>
-            <p class="highlight" style="font-size: 1.5rem;">August 6th, 2026</p>
+            <p style="font-size: 1.2rem; letter-spacing: 2px; text-transform: uppercase; margin-top: 0;">Are Getting Married</p>
+            <p class="highlight" style="font-size: 1.4rem;">August 6th, 2026</p>
+            
+            <a href="https://docs.google.com/forms/d/1xIXKs6iYi6wbFzAPxjGmdy0h15XmXOL1AHcOoIIQQXM" class="rsvp-button" target="_blank">
+                RSVP Here
+            </a>
+            <br>
+            <p class="small-print">Kindly respond by April 10th, 2026</p>
         </header>
 
         <div class="section">
@@ -171,15 +168,19 @@
 
         <div class="section">
             <h2>The Menu</h2>
-            <p class="small-print">Please let us know of any dietary requirements or allergies in your RSVP.</p>
+            <p class="small-print">Please indicate your choices and any dietary requirements on the RSVP form.</p>
 
             <div class="menu-grid">
                 <div class="menu-column">
                     <h4>Adult Menu</h4>
                     <p><strong>Starter</strong><br>Homemade tomato soup with crusty bread & butter.</p>
-                    <p><strong>Main Course</strong><br>Roast topside of beef with panache of vegetables, roast potatoes, Yorkshire pudding & gravy.<br>
-                    <em>— OR —</em><br>
-                    (Vegan) Butternut squash, lentil & almond wellington with panache of vegetables & gravy.</p>
+                    
+                    <p><strong>Main Course (Please Choose One)</strong></p>
+                    <ul style="list-style-type: disc; padding-left: 20px;">
+                        <li><strong>Option A:</strong> Roast topside of beef with panache of vegetables, roast potatoes, Yorkshire pudding & gravy.</li>
+                        <li><strong>Option B (Vegan):</strong> Butternut squash, lentil & almond wellington with panache of vegetables & gravy.</li>
+                    </ul>
+
                     <p><strong>Dessert</strong><br>Homemade sticky toffee pudding with toffee sauce.</p>
                 </div>
 
@@ -203,7 +204,7 @@
                         <li>• Cheese tomato pizza</li>
                         <li>• Pork sausage</li>
                     </ul>
-                    <p class="small-print">(Served with fries, mash, peas, beans & gravy)</p>
+                    <p class="small-print" style="margin-top:-10px;">(Served with fries, mash, peas, beans & gravy)</p>
 
                     <p><strong>Dessert Options</strong></p>
                     <ul>
@@ -216,11 +217,9 @@
         </div>
 
         <div class="section" style="border-bottom: none;">
-            <h2>RSVP</h2>
-            <p>We kindly request your response by <strong>April 10th, 2026</strong>.</p>
-            
-            <a href="https://docs.google.com/forms/d/1xIXKs6iYi6wbFzAPxjGmdy0h15XmXOL1AHcOoIIQQXM" class="rsvp-button" target="_blank">
-                Click to RSVP
+            <p>We can't wait to celebrate with you!</p>
+            <a href="https://docs.google.com/forms/d/1xIXKs6iYi6wbFzAPxjGmdy0h15XmXOL1AHcOoIIQQXM" class="address-link" target="_blank" style="font-weight: bold; font-size: 1.1rem;">
+                Open RSVP Form >
             </a>
         </div>
 
